@@ -2,8 +2,8 @@
     width: 100%;
     height: auto;
     padding-bottom: 100px;
-    .container{
-        @media(max-width: 800px){
+    .container {
+        @media (max-width: 800px) {
             padding: 0;
         }
     }
@@ -23,9 +23,18 @@
             background-size: contain;
             height: 380px;
         }
-       
+        @media (max-width: 690px) {
+            background-size: contain;
+            height: 255px;
+        }
+        @media (max-width: 526px) {
+            height: 200px;
+        }
+
         @media (max-width: 430px) {
+            height: 413px;
             background-image: url("images/mob-bg-min.webp");
+            background-size: cover;
         }
     }
 
@@ -40,6 +49,9 @@
         }
         @media (max-width: 600px) {
             bottom: 24vw;
+        }
+        @media (max-width: 690px) {
+           bottom: 13vw;
         }
         @media (max-width: 580px) {
             left: 5vw;
@@ -61,7 +73,6 @@
             font-family: "Montserrat" sans-serif;
             font-size: 34.04px;
             font-weight: 900;
-            line-height: 110%;
             letter-spacing: 0%;
             text-align: center;
             text-transform: uppercase;

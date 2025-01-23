@@ -5,7 +5,7 @@
     padding: 15px 0;
     box-shadow: 2px 7px 14px 0px rgba(39, 74, 109, 0.1);
     background: rgb(255, 255, 255);
-    @media(max-width: 430px){
+    @media (max-width: 430px) {
         min-height: 109px;
     }
     &__logo {
@@ -49,6 +49,10 @@
             gap: 40px;
             margin-bottom: 70px;
         }
+        @media (max-width: 450px) {
+            width: 100%;
+            justify-content: start;
+        }
         &-item {
             flex-grow: 1;
             span {
@@ -78,6 +82,9 @@
         gap: 36px;
         @media (max-width: 960px) {
             gap: 15px;
+        }
+        @media (max-width: 855px) {
+            margin-bottom: 40px;
         }
     }
     &__social-icon {
@@ -112,7 +119,13 @@
             display: none;
             transform: translateX(-200%);
         }
+        @media (max-width: 450px) {
+            width: 100%;
+            right: 0;
+        }
         &_active {
+            max-width: 430px;
+            height: 100%;
             display: flex;
             position: absolute;
             z-index: 10001;
@@ -121,10 +134,10 @@
             padding-left: 0;
             padding: 115px 15px 100px 15px;
             background-color: #fff;
-            max-width: 430px;
-            min-height: 100vh;
+            
             flex-direction: column;
             transform: translateX(0);
+            overflow: auto;
         }
     }
     &__open-menu {
@@ -134,13 +147,40 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+        position: relative;
+        z-index: 10002;
+
         span {
             width: 100%;
             height: 3px;
             background: rgb(72, 124, 171);
+            transition-property: display, transform;
+            transition-duration: 0.3s;
         }
         @media (max-width: 855px) {
             display: flex;
+        }
+        &_active {
+            span {
+                position: absolute;
+                display: none;
+
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                    display: block;
+                }
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                    display: block;
+                }
+            }
+        }
+    }
+    &__mob-btn {
+        display: none;
+        @media (max-width: 855px) {
+            flex-shrink: 0;
+            display: block;
         }
     }
 }
