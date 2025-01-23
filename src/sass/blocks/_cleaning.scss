@@ -23,6 +23,11 @@
     &__img-wrap {
         max-width: 703px;
         max-height: 372px;
+        flex-grow: 1;
+        @media(max-width: 430px){
+            width: 380px;
+            height: 370px;
+        }
         img {
             width: 100%;
             height: 100%;
