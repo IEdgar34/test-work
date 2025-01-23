@@ -1,0 +1,25 @@
+<svg width="35.000000" height="35.000000" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_16_75_dd" x="0.000000" y="0.000000" width="35.000000" height="35.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="2.08571" dy="2.08571"/>
+			<feGaussianBlur stdDeviation="1.04286"/>
+			<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"/>
+			<feBlend mode="normal" in2="shape" result="effect_innerShadow_1"/>
+		</filter>
+		<linearGradient x1="8.034203" y1="31.633989" x2="37.955254" y2="6.285219" id="paint_linear_16_75_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#006EAC"/>
+			<stop offset="1.000000" stop-color="#41B4F2"/>
+		</linearGradient>
+	</defs>
+	<g filter="url(#filter_16_75_dd)">
+		<circle id="Ellipse 1139" cx="17.500000" cy="17.500000" r="17.500000" fill="url(#paint_linear_16_75_0)" fill-opacity="1.000000"/>
+	</g>
+	<path id="Vector" d="M25.16 8.56C22.21 9.8 9.54 15.09 6.04 16.53C3.69 17.45 5.06 18.32 5.06 18.32C5.06 18.32 7.07 19.01 8.78 19.53C10.5 20.05 11.42 19.47 11.42 19.47L19.49 13.99C22.35 12.02 21.67 13.64 20.98 14.33C19.49 15.84 17.03 18.2 14.97 20.11C14.05 20.92 14.51 21.61 14.91 21.96C16.4 23.23 20.47 25.83 20.69 26C21.9 26.86 24.28 28.11 24.65 25.48L26.08 16.41C26.54 13.35 26.99 10.52 27.05 9.71C27.22 7.75 25.16 8.56 25.16 8.56L25.16 8.56Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
