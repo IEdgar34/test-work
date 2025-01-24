@@ -105,7 +105,8 @@ module.exports = {
                 { from: "src/images", to: "images" },
                 { from: "src/css", to: "css" },
                 { from: "src", to: "formhandler.php" },
-                /* { from: "vendor", to: "vendor" }, */
+                { from: "vendor", to: "vendor" },
+              
             ],
         }),
     ],

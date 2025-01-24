@@ -1,7 +1,9 @@
 <?php
 // Подключаем автозагрузку Composer
-require __DIR__ . '/vendor/autoload.php';
-
+/* require __DIR__ . '/vendor/autoload.php'; */
+/* require __DIR__ . '/vendor/phpmailer/phpmailer/Exception.php'; */
+require __DIR__ . '/vendor/phpmailer/phpmailer/PHPMailer.php';
+require __DIR__ . '/vendor/phpmailer/phpmailer/SMTP.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
