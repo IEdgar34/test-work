@@ -20,6 +20,19 @@ li {
 html {
     height: 100%;
 }
-.overflow{
+.overflow {
+    overflow: hidden;
+}
+.map{
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+
+}
+#map{
+    width: 940px;
+    height: 260px;
+    margin: 0 auto;
+    border-radius: 20px;
     overflow: hidden;
 }

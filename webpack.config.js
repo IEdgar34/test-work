@@ -69,14 +69,11 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    "css-loader",
-                ],
+                use: [MiniCssExtractPlugin.loader, "css-loader"],
             },
         ],
     },
-   
+
     plugins: [
         new MiniCssExtractPlugin({
             filename: "style.css",
@@ -98,6 +95,8 @@ module.exports = {
             notify: false,
             open: true,
             port: 3000,
+            cors: true, // Включите CORS
+            notify: false,
         }),
         new CopyWebpackPlugin({
             patterns: [
@@ -105,7 +104,6 @@ module.exports = {
                 { from: "src/icons", to: "icons" },
                 { from: "src/images", to: "images" },
                 { from: "src/css", to: "css" },
-                
             ],
         }),
     ],
@@ -124,8 +122,7 @@ module.exports = {
                     ],
                 },
             }),
-           /*  new TerserPlugin() */
+             new TerserPlugin()
         ],
-        
     },
 };

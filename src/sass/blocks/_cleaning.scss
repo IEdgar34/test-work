@@ -2,6 +2,9 @@
     width: 100%;
     height: auto;
     padding-bottom: 100px;
+    @media(max-width:430px){
+        padding-bottom: 83px;
+    }
     &__title {
         padding-bottom: 40px;
         color: rgb(72, 124, 171);
@@ -11,6 +14,9 @@
         letter-spacing: 0%;
         text-align: center;
         text-transform: uppercase;
+        @media (max-width: 430px) {
+            padding-bottom: 29px;
+        }
     }
     &__wrapper {
         width: 100%;
@@ -19,12 +25,15 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
+        @media (max-width: 430px) {
+            gap: 37px;
+        }
     }
     &__img-wrap {
         max-width: 703px;
         max-height: 372px;
         flex-grow: 1;
-        @media(max-width: 430px){
+        @media (max-width: 430px) {
             width: 380px;
             height: 370px;
         }
@@ -45,20 +54,29 @@
         line-height: 26px;
         letter-spacing: 0%;
         text-align: left;
+        @media (max-width: 430px) {
+            margin-bottom: 8px;
+        }
     }
     &__descr-list {
         display: flex;
         flex-direction: column;
-       /*  gap: 11px; */
+        /*  gap: 11px; */
         margin-bottom: 15px;
+        @media (max-width: 430px) {
+            margin-bottom: 6px;
+        }
         .icon {
             width: 15px;
             height: 15px;
             color: red;
         }
     }
-    &__descr-list-item{
-
+    &__descr-list-item {
+        &_svg {
+            width: 15px;
+            height: 15px;
+        }
     }
     &__descr-list-text {
         color: rgb(72, 124, 171);
@@ -70,10 +88,10 @@
     &__descr-times {
         display: flex;
         margin-bottom: 16px;
-        .icon {
+
+        &_svg {
             width: 20px;
             height: 20px;
-            margin-right: 10px;
         }
         p {
             &:nth-child(2) {

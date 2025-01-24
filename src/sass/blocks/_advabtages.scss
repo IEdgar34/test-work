@@ -1,0 +1,101 @@
+.advantages {
+    width: 100%;
+    height: auto;
+    padding-bottom: 87px;
+    font-family: "Montserrat";
+    &__title {
+        padding-bottom: 48px;
+        color: rgb(72, 124, 171);
+        font-family: inherit;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+        @media (max-width: 430px) {
+            padding-bottom: 57px;
+        }
+    }
+    &__wrapper {
+        /* .swiper {
+        } */
+        .swiper-wrapper {
+            flex-wrap: wrap !important;
+            justify-content: center;
+            gap: 54px;
+            @media (max-width: 430px) {
+                flex-wrap: nowrap !important;
+                justify-content: start;
+                gap: 0;
+            }
+        }
+        .swiper-slide {
+            display: flex !important;
+            flex-grow: 1;
+            flex-shrink: 0;
+            height: auto;
+        }
+        .swiper-pagination-wrapper {
+            display: none !important;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            gap: 35px;
+            @media (max-width: 430px) {
+                display: flex !important;
+            }
+        }
+        .swiper-pagination {
+            display: flex;
+            gap: 25px;
+        }
+        .swiper-pagination-bullet {
+            width: 12px !important;
+            height: 12px !important;
+            border: 1px solid rgb(72, 124, 171);
+            border-radius: 50% !important;
+            cursor: pointer;
+        }
+        .swiper-pagination-bullet-active {
+            border: none;
+            background: rgb(234, 75, 101);
+        }
+    }
+    &__item {
+        max-width: 393px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-icon {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 17px;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-descr {
+            max-width: 307px;
+            margin-bottom: 20px;
+            color: rgb(72, 124, 171);
+            font-family: inherit;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 26px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+        &-subdescr {
+            color: rgb(82, 82, 82);
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 120%;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+    }
+}
