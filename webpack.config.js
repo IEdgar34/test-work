@@ -104,6 +104,8 @@ module.exports = {
                 { from: "src/icons", to: "icons" },
                 { from: "src/images", to: "images" },
                 { from: "src/css", to: "css" },
+                { from: "src", to: "formhandler.php" },
+                { from: "vendor", to: "vendor" },
             ],
         }),
     ],
@@ -122,7 +124,7 @@ module.exports = {
                     ],
                 },
             }),
-             new TerserPlugin()
+            new TerserPlugin(),
         ],
     },
 };

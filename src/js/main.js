@@ -8,11 +8,13 @@ import { menuOpen } from "./modules/menu";
 import { yMapsInit } from "./modules/ymapsinit";
 import { questionsOpen } from "./modules/questions";
 import { advantagesSwiper } from "./modules/advantagesswiper";
+import { formHandler } from "./modules/formhandler";
 window.addEventListener("DOMContentLoaded", () => {
     stagesSwiper(Swiper, Navigation, Pagination);
     gallerySwiper(Swiper, Navigation, Pagination);
     advantagesSwiper(Swiper, Navigation, Pagination)
     menuOpen();
-    /* yMapsInit(); */
+    yMapsInit();
     questionsOpen();
+    formHandler()
 });
