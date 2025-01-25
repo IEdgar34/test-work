@@ -9,3 +9,5 @@
 @use "blocks/gallery";
 @use "blocks/questions";
 @use "blocks/forms";
+@use "blocks/ymaps";
+@import "@yandex/ymaps3-default-ui-theme/dist/esm/index.css";

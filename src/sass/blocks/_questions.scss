@@ -45,7 +45,7 @@
                 overflow: visible;
             }
             @media (max-width: 700px) {
-                padding: 17px 60px 17px 10px;
+                padding: 20px 66px 17px 17px;
             }
         }
     }
@@ -95,6 +95,9 @@
             line-height: 130%;
             letter-spacing: 0%;
             text-align: left;
+            @media(max-width: 425px){
+                font-size: 16px;
+            }
         }
         &__item-content {
             margin-top: 40px;
@@ -111,6 +114,9 @@
                 text-align: left;
                 margin-top: 20px;
                 list-style-type: circle !important;
+                @media(max-width: 425px){
+                    font-size: 15px;
+                }
             }
             &-list {
                 padding-left: 20px;
@@ -125,7 +131,7 @@
                 text-align: left;
                 margin-top: 20px;
                 list-style-type: circle !important;
-                @media(max-width: 430px){
+                @media(max-width: 425px){
                     font-size: 15px;
                 }
             }

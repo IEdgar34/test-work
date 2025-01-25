@@ -14,7 +14,8 @@ window.addEventListener("DOMContentLoaded", () => {
     gallerySwiper(Swiper, Navigation, Pagination);
     advantagesSwiper(Swiper, Navigation, Pagination)
     menuOpen();
-    /* yMapsInit(); */
+    yMapsInit();
     questionsOpen();
     formHandler()
+   
 });

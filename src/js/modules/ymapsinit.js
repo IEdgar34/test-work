@@ -18,8 +18,8 @@ export const yMapsInit = () => {
         // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
         await ymaps3.ready;
 
-        const { YMap, YMapDefaultSchemeLayer, YMapMarker, YMapDefaultFeaturesLayer, YMapControls,YMapZoomControl } = ymaps3;
-        //const { YMapDefaultMarker } = await import("@yandex/ymaps3-default-ui-theme");
+        const { YMap, YMapDefaultSchemeLayer, YMapMarker, YMapDefaultFeaturesLayer, YMapControls } = ymaps3;
+        const { YMapZoomControl, YMapGeolocationControl } = await import("@yandex/ymaps3-default-ui-theme");
         // Иницилиазируем карту
         const map = new YMap(
             // Передаём ссылку на HTMLElement контейнера
@@ -43,28 +43,23 @@ export const yMapsInit = () => {
         // Добавьте слой для маркеров
         map.addChild(new YMapDefaultFeaturesLayer());
 
-        /*  const markersData = [
-            { coordinates: [37.588144, 55.733842] },
-            { coordinates: [44.579885253511264, 48.50070028427699] },
-            { coordinates: [38.982983348682154, 45.04095308652142] },
-            { coordinates: [45.96716545127952, 51.58999822864551] },
-            { coordinates: [39.203627820917944, 51.674969632719595] },
-            { coordinates: [44.563925, 40.208926] },
-            { coordinates: [82.9742528817798, 55.02716234040702] },
-        ];
+        const markersData = [{ coordinates: [43.462389, 56.240627] }];
         markersData.forEach(({ coordinates }) => {
             const markerElement = document.createElement("div");
+            markerElement.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                            <use xlink:href="#img-phone"></use>
+                                        </svg>`;
             markerElement.className = "target";
-            const marker = new YMapMarker({ coordinates, draggable: true }, markerElement);
+            const marker = new YMapMarker({ coordinates, draggable: false }, markerElement);
             map.addChild(marker);
-        }); */
-        /* const controls =   new YMapControls();
+        });
+        const controls = new YMapControls({ position: "top right" });
+        controls.addChild(new YMapGeolocationControl());
         controls.addChild(
             new YMapZoomControl({
                 easing: "linear",
             })
         );
-
-        map.addChild(controls); */
+        map.addChild(controls);
     }
 };
