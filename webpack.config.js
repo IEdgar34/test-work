@@ -8,6 +8,8 @@ const loader = require("sass-loader");
 const autoprefixer = require("autoprefixer");
 const TerserPlugin = require("terser-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
+const compression = require("compression");
+
 
 module.exports = {
     entry: "./src/js/main.js",
@@ -91,6 +93,7 @@ module.exports = {
         new BrowserSyncPlugin({
             server: {
                 baseDir: "dist",
+                middleware: [compression()]
             },
             files: ["dist/*.html", "dist/css/*.css", "dist/js/*.js"],
             notify: false,
