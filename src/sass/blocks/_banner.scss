@@ -11,7 +11,7 @@
         position: relative;
         width: 100%;
         height: 560px;
-        background-image: url("images/banner-min.png");
+        background-image: url("images/banner-min.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -30,7 +30,7 @@
         @media (max-width: 526px) {
             height: 200px;
         }
-
+        
         @media (max-width: 430px) {
             height: 413px;
             background-image: url("images/mob-bg-min.webp");
@@ -38,7 +38,9 @@
         }
         @media (max-width: 378px) {
             background-size: contain;
+            
         }
+
     }
 
     &__txt {
