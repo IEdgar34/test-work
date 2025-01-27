@@ -2,9 +2,19 @@
     width: 100%;
     height: auto;
     padding-bottom: 100px;
-    &__social-icons{
+    &__social-icons {
         justify-content: center;
         margin-bottom: 40px;
+        .header__social-icon {
+            @media (max-width: 855px) {
+                width: 35px;
+                height: 35px;
+            }
+            svg {
+                width: 35px;
+                height: 35px;
+            }
+        }
     }
 }
 #map {
@@ -23,7 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    svg{
+    svg {
         width: 90%;
         height: 90%;
     }

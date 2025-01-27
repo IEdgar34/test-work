@@ -13,6 +13,9 @@
         letter-spacing: 0%;
         text-align: center;
         text-transform: uppercase;
+        @media (max-width: 400px) {
+            font-size: 27px;
+        }
     }
     &__wrapper {
         width: 100%;
@@ -94,6 +97,9 @@
         gap: 35px;
         @media(max-width: 430px){
             margin-top: 10px;
+        }
+        @media (max-width: 400px) {
+            gap: 12px;
         }
     }
     .swiper-pagination {

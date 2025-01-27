@@ -36,6 +36,9 @@
             background-image: url("images/mob-bg-min.webp");
             background-size: cover;
         }
+        @media (max-width: 378px) {
+            background-size: contain;
+        }
     }
 
     &__txt {

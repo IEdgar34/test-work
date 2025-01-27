@@ -16,6 +16,9 @@
         @media (max-width: 430px) {
             padding-bottom: 57px;
         }
+        @media (max-width: 400px) {
+            font-size: 27px;
+        }
     }
     &__wrapper {
         .swiper-wrapper {
@@ -42,6 +45,9 @@
             gap: 35px;
             @media (max-width: 430px) {
                 display: flex !important;
+            }
+            @media (max-width: 400px) {
+               gap: 12px;
             }
         }
         .swiper-pagination {
