@@ -88,8 +88,8 @@ export const formHandler = () => {
         formBtn.append(div);
     }
 
-    const maskOptions = {
+  /*   const maskOptions = {
         mask: "+{7}(000)-000-00-00",
     };
-    const mask = IMask(phone, maskOptions);
+    const mask = IMask(phone, maskOptions); */
 };
