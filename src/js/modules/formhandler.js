@@ -88,7 +88,6 @@ export const formHandler = () => {
         formBtn.append(div);
     }
 
-    const element = document.getElementById("input[name='phone']");
     const maskOptions = {
         mask: "+{7}(000)-000-00-00",
     };
