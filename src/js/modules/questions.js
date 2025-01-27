@@ -4,7 +4,7 @@ export const questionsOpen = () => {
         item.addEventListener("click",(e) => {
 
             item.classList.toggle("list__item-open_active")
-            item.closest(".questions__list-item").classList.toggle("questions__list-item_active")
+            item.nextElementSibling.classList.toggle("list__item-content_active")
         })
     })
 
