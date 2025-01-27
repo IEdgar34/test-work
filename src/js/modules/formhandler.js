@@ -4,6 +4,8 @@ export const formHandler = () => {
     const form = document.getElementById("contactForm");
     const formBtn = document.querySelector(".forms__btn");
     const phone = document.querySelector("input[name='phone']");
+    const preLoad = new Image();
+    preLoad.src = "images/loading.gif";
     let valid = [];
 
     const validationRules = {
@@ -69,7 +71,7 @@ export const formHandler = () => {
                 .then((e) => {
                     console.log("Сообщение отправлено");
                     inputs.forEach((item) => (item.value = ""));
-                    formBtn.innerText = "Записаться";
+                    formBtn.innerText = "Записаться ";
                 })
                 .catch((err) => {
                     console.log(err);
@@ -79,13 +81,15 @@ export const formHandler = () => {
     });
 
     function loadingStart() {
-        formBtn.innerText = "";
-        const div = document.createElement("div");
-        const img = document.createElement("img");
-        div.classList.add("loading");
-        img.src = "images/loading.gif";
-        div.append(img);
-        formBtn.append(div);
+        formBtn.innerHTML = `<div class="loader">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                    <div class="bar3"></div>
+                                    <div class="bar4"></div>
+                                    <div class="bar5"></div>
+                                    <div class="bar6"></div>
+                                </div>`;
+        
     }
 
     const maskOptions = {
