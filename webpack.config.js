@@ -7,6 +7,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const loader = require("sass-loader");
 const autoprefixer = require("autoprefixer");
 const TerserPlugin = require("terser-webpack-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
     entry: "./src/js/main.js",
@@ -106,8 +107,15 @@ module.exports = {
                 { from: "src/css", to: "css" },
                 { from: "src", to: "formhandler.php" },
                 { from: "vendor", to: "vendor" },
-              
             ],
+        }),
+        new CompressionPlugin({
+            test: /\.m?js$/,
+            algorithm: "gzip"
+        }),
+        new CompressionPlugin({
+            test: /\.css$/i,
+            algorithm: "gzip"
         }),
     ],
     optimization: {
