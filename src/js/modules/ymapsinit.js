@@ -29,7 +29,7 @@ export const yMapsInit = () => {
             {
                 location: {
                     // Координаты центра карты
-                    center: [43.462389, 56.240643],
+                    center: [43.46277718229649,56.24091325213029],
 
                     // Уровень масштабирования
                     zoom: 15,
@@ -43,13 +43,13 @@ export const yMapsInit = () => {
         // Добавьте слой для маркеров
         map.addChild(new YMapDefaultFeaturesLayer());
 
-        const markersData = [{ coordinates: [43.462389, 56.240627] }];
+        const markersData = [{ coordinates: [43.46277718229649,56.24091325213029] }];
         markersData.forEach(({ coordinates }) => {
             const markerElement = document.createElement("div");
-            markerElement.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-                                            <use xlink:href="#img-phone"></use>
-                                        </svg>`;
             markerElement.className = "target";
+            markerElement.innerHTML = `<svg width="682.667" height="682.667" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+	                                       <use xlink:href="#img-laptop--1-"></use>
+                                       </svg>`;
             const marker = new YMapMarker({ coordinates, draggable: false }, markerElement);
             map.addChild(marker);
         });

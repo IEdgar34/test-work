@@ -1,0 +1,25 @@
+.footer {
+    width: 100%;
+    min-height: 150px;
+    border-top: 2px solid rgb(72, 124, 171);
+    &__wrapper {
+        width: 100%;
+        min-height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        &-link {
+            color: rgb(72, 124, 171);
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 10%;
+            text-transform: uppercase;
+        }
+    }
+}

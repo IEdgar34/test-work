@@ -28,7 +28,7 @@ try {
     // От кого письмо
     $mail->setFrom('edo.jan.94@bk.ru', 'Your Name');
     // Кому письмо
-    $mail->addAddress('dd7q2@e-record.com', 'Recipient Name');
+    $mail->addAddress('q5i3f@e-record.com', 'Recipient Name');
 
     // Содержание письма
     $mail->isHTML(true);

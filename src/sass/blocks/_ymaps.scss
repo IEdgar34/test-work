@@ -1,0 +1,40 @@
+.map {
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+    &__social-icons{
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}
+#map {
+    max-width: 940px;
+    height: 260px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.target {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+        width: 90%;
+        height: 90%;
+    }
+}
+.ymaps3x0--controls {
+    flex-direction: column-reverse !important;
+    gap: 20px !important;
+}
+.ymaps3--zoom-control {
+    flex-direction: column !important;
+}
+.ymaps3x0--control {
+    margin-right: 0 !important;
+}
