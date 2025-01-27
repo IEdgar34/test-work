@@ -1,7 +1,9 @@
+import IMask from "imask";
 export const formHandler = () => {
     const inputs = document.querySelectorAll(".form__input ,.validate");
     const form = document.getElementById("contactForm");
     const formBtn = document.querySelector(".forms__btn");
+    const phone = document.querySelector("input[name='phone']");
     let valid = [];
 
     const validationRules = {
@@ -15,7 +17,7 @@ export const formHandler = () => {
             }
         },
         phone(value, item) {
-            if (value != "" /* /^\+\d{1,1}\(\d{3,3}\)\-\d{3,3}\-\d{2,2}\-(?:\d{2,2}|\d{2,}\_)$/g.test(value) */) {
+            if (/^\+\d{1,1}\(\d{3,3}\)\-\d{3,3}\-\d{2,2}\-(?:\d{2,2}|\d{2,}\_)$/g.test(value)) {
                 return true;
             } else {
                 item.style.border = "2px solid red";
@@ -85,4 +87,10 @@ export const formHandler = () => {
         div.append(img);
         formBtn.append(div);
     }
+
+    const element = document.getElementById("input[name='phone']");
+    const maskOptions = {
+        mask: "+{7}(000)-000-00-00",
+    };
+    const mask = IMask(phone, maskOptions);
 };
