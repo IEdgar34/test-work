@@ -89,11 +89,13 @@ export const formHandler = () => {
                                     <div class="bar5"></div>
                                     <div class="bar6"></div>
                                 </div>`;
-        
     }
 
     const maskOptions = {
         mask: "+{7}(000)-000-00-00",
     };
     const mask = IMask(phone, maskOptions);
+    phone.addEventListener("click", () => {
+        mask.updateValue("");
+    });
 };

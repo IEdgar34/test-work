@@ -28,12 +28,15 @@
         flex-direction: column;
         overflow: hidden;
         border-radius: 20px;
-
         box-shadow: 2px 7px 14px 0px rgba(39, 74, 109, 0.1);
         background: rgb(255, 255, 255);
         @media(max-width: 430px){
             min-width: 270px;
             min-height: 322px;
+        }
+        img{
+            width: 100%;
+            height: 269px;
         }
         &-desc-wrapp {
             flex-grow: 1;

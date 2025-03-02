@@ -4,9 +4,16 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="РУС2 Стажировка" />
+        <!--  <link rel="preload" href="images/banner-min.webp" as="image" />
+        <link rel="preload" href="images/mob-bg-min.webp" as="image" /> -->
+        <link rel="preload" as="image" href="images/mob-bg-min.webp" type="image/webp" fetchpriority="high" />
+        <link rel="preload" as="image" href="images/banner-min.webp" type="image/webp" fetchpriority="high" />
         <meta name="author" content="Edgik Levonyan" />
-        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/fonts.css" media="print" onload="this.onload=null;this.media='all'" />
         <title>РУС2</title>
+        <style>
+            @font-face{font-family:Montserrat;src:url("../fonts/Montserrat-Italic.ttf") format("truetype");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-BlackItalic.ttf") format("truetype");font-weight:900;font-style:italic;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-Light.ttf") format("truetype");font-style:normal;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-BoldItalic.ttf") format("truetype");font-weight:700;font-style:italic;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-Black.ttf") format("truetype");font-weight:900;font-style:normal;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-ExtraLight.ttf") format("truetype");font-weight:200;font-style:normal;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-ExtraBoldItalic.ttf") format("truetype");font-weight:700;font-style:italic;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-ExtraLightItalic.ttf") format("truetype");font-weight:200;font-style:italic;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/fontsMontserrat-Thin.ttf") format("truetype");font-weight:100;font-style:normal;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-LightItalic.ttf") format("truetype");font-weight:300;font-style:italic;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-Medium.ttf") format("truetype");font-weight:500;font-style:normal;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-SemiBold.ttf") format("truetype");font-weight:600;font-style:normal;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-ThinItalic.ttf") format("truetype");font-weight:100;font-style:italic;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-SemiBoldItalic.ttf") format("truetype");font-weight:600;font-style:italic;font-display:swap;}@font-face{font-family:Montserrat;src:url("../fonts/Montserrat-MediumItalic.ttf") format("truetype");font-weight:500;font-style:italic;font-display:swap;}*{margin:0px;padding:0px;box-sizing:border-box;font-family:Montserrat;}.container{max-width:1470px;margin:0px auto;padding:0px 25px;height:auto;}@media (max-width:370px){.container{padding:0px 10px;}}a{text-decoration:none;}li,ul{list-style-type:none;}html{height:100%;}.header{width:100%;min-height:90px;padding:15px 0px;box-shadow:rgba(39,74,109,0.1) 2px 7px 14px 0px;background:rgb(255,255,255);}@media (max-width:430px){.header{min-height:109px;}}.header__logo{width:60px;height:60px;}.header__wrapper{width:100%;height:100%;display:flex;-webkit-box-pack:justify;justify-content:space-between;-webkit-box-align:center;align-items:center;}.header__menu-list{display:none;}@media (max-width:855px){.header__menu-list{width:100%;display:flex;-webkit-box-pack:start;justify-content:start;gap:40px;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;margin-bottom:70px;}}.header__menu-list .menu__link{color:rgb(82,82,82);font-family:Montserrat,sans-serif;font-size:16px;font-weight:600;line-height:18px;letter-spacing:0px;}.header__nav{display:flex;-webkit-box-flex:1;flex-grow:1;-webkit-box-pack:justify;justify-content:space-between;}@media (max-width:855px){.header__nav{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;gap:50px;margin-bottom:70px;}}@media (max-width:450px){.header__nav{width:100%;-webkit-box-pack:start;justify-content:start;}}.header__nav-item{-webkit-box-flex:1;flex-grow:1;}.header__nav-item span{display:flex;height:18px;-webkit-box-align:center;align-items:center;gap:15px;}.header__nav-link{font-family:Montserrat,sans-serif;color:rgb(82,82,82);font-size:15px;font-weight:400;line-height:18px;letter-spacing:0px;}.header__nav-icon{width:15px;height:15px;}.header__social-icons{display:flex;-webkit-box-flex:1;flex-grow:1;-webkit-box-pack:end;justify-content:end;gap:36px;}@media (max-width:960px){.header__social-icons{gap:15px;}}@media (max-width:855px){.header__social-icons{margin-bottom:40px;gap:36px;}}.header__social-icon{width:36px;height:36px;background:linear-gradient(54.73deg,rgb(0,97,194) 14.073%,rgb(76,187,255) 85.875%);border-radius:50%;}.header__social-icon,.header__social-icon:nth-child(3){box-shadow:rgba(255,255,255,0.5) 2.09px 2.09px 3.13px 0px inset;}.header__social-icon:nth-child(3){background:linear-gradient(0deg,rgb(32,176,56),rgb(96,214,106) 100%);}.header__social-icon a{display:block;}.header__social-icon a svg{width:35px;height:35px;}@media (max-width:855px){.header__social-icon,.header__social-icon a svg{width:50px;height:50px;}}.header__nav-wrapper{-webkit-box-flex:1;flex-grow:1;display:flex;-webkit-box-pack:justify;justify-content:space-between;-webkit-box-align:center;align-items:center;padding-left:60px;}@media (max-width:960px){.header__nav-wrapper{padding-left:20px;}}@media (max-width:890px){.header__nav-wrapper{visibility:hidden;position:absolute;transform:translateX(-200%);}}@media (max-width:450px){.header__nav-wrapper{width:100%;right:0px;}}.header__open-menu{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;}.header__open-menu{width:32px;height:18px;display:none;-webkit-box-pack:justify;justify-content:space-between;position:relative;z-index:10002;}.header__open-menu span{width:100%;height:3px;background:rgb(72,124,171);}@media (max-width:890px){.header__open-menu{display:flex;}}.header__mob-btn{display:none;}@media (max-width:855px){.header__mob-btn{flex-shrink:0;display:block;}}.subheader{width:100%;}.subheader__wrapper{display:flex;-webkit-box-pack:justify;justify-content:space-between;padding:48px 0px 30px;}@media (max-width:855px){.subheader__wrapper{-webkit-box-pack:center;justify-content:center;padding:30px 0px;}}.subheader__btn{width:177px;height:34px;border:none;font-family:Montserrat,sans-serif;color:rgb(255,255,255);font-size:13px;font-weight:700;line-height:130%;letter-spacing:0px;text-align:center;text-transform:uppercase;border-radius:10px;box-shadow:rgba(234,75,101,0.45) 2px 7px 14px 0px;background:rgb(234,75,101);}@media (max-width:430px){.subheader__btn{width:182px;height:41px;}}.subheader .menu__list{display:flex;gap:38px;}@media (max-width:855px){.subheader .menu__list{display:none;-webkit-box-pack:center;justify-content:center;}}.subheader .menu__link{color:rgb(82,82,82);font-family:Montserrat,sans-serif;font-size:16px;font-weight:600;line-height:18px;letter-spacing:0px;}.banner{width:100%;height:auto;padding-bottom:100px;}@media (max-width:800px){.banner .container{padding:0px;}}.banner__wrapper{position:relative;width:100%;height:560px;background-image:url("images/banner-min.webp");background-position:50% center;background-repeat:no-repeat;background-size:contain;border-radius:10px;}@media (max-width:1450px){.banner__wrapper{height:460px;}}@media (max-width:1029px){.banner__wrapper{background-size:contain;height:380px;}}@media (max-width:690px){.banner__wrapper{background-size:contain;height:255px;}}@media (max-width:526px){.banner__wrapper{height:200px;}}@media (max-width:430px){.banner__wrapper{height:413px;background-image:url("images/mob-bg-min.webp");background-position:50% center;background-repeat:no-repeat;background-size:contain;}}@media (max-width:378px){.banner__wrapper{background-size:contain;}}.banner__txt{position:absolute;z-index:100;bottom:4vw;left:16vw;max-width:266px;}@media (max-width:1029px){.banner__txt{bottom:14vw;}}@media (max-width:600px){.banner__txt{bottom:24vw;}}@media (max-width:690px){.banner__txt{bottom:13vw;}}@media (max-width:580px){.banner__txt{left:5vw;}}@media (max-width:430px){.banner__txt{bottom:21vw;}}.banner__txt-descr{color:rgb(19,48,111);font-family:Montserrat,sans-serif;font-size:21px;font-weight:700;line-height:120%;letter-spacing:0px;text-align:center;}@media (max-width:1029px){.banner__txt-descr{display:none;}}.banner__txt-price{font-size:54px;font-weight:900;text-align:center;text-transform:uppercase;margin-bottom:45px;}.banner__txt-price,.banner__txt-price span{color:rgb(19,48,111);font-family:Montserrat,sans-serif;letter-spacing:0px;}.banner__txt-price span{font-size:34px;font-weight:700;}@media (max-width:1029px){.banner__txt-price{display:none;}}.banner__btn{display:block;width:177px;height:40px;margin:0px auto;border:none;border-radius:10px;box-shadow:rgba(234,75,101,0.45) 2px 7px 14px 0px;background:rgb(234,75,101);color:rgb(255,255,255);font-family:Montserrat,sans-serif;font-size:13px;font-weight:700;line-height:130%;letter-spacing:0px;text-align:center;text-transform:uppercase;}.services{width:100%;height:auto;padding-bottom:100px;}.services__title{margin-bottom:41px;color:rgb(72,124,171);font-size:36px;font-weight:700;line-height:110%;letter-spacing:0px;text-align:center;text-transform:uppercase;}@media (max-width:400px){.services__title{font-size:27px;}}.services__wrapper{flex-wrap:wrap;-webkit-box-pack:center;justify-content:center;gap:20px;}.services__item,.services__wrapper{display:flex;}.services__item{max-width:460px;min-height:390px;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;overflow:hidden;border-radius:20px;box-shadow:rgba(39,74,109,0.1) 2px 7px 14px 0px;background:rgb(255,255,255);}@media (max-width:430px){.services__item{min-width:270px;min-height:322px;}}.advantages__wrapper .swiper-pagination-wrapper{-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;margin-top:40px;gap:35px;display:none !important;}@media (max-width:430px){.advantages__wrapper .swiper-pagination-wrapper{display:flex !important;}}@media (max-width:400px){.advantages__wrapper .swiper-pagination-wrapper{gap:12px;}}.advantages__wrapper .swiper-pagination{display:flex;gap:25px;}:root{--swiper-theme-color:#007aff;}:host{position:relative;display:block;margin-left:auto;margin-right:auto;z-index:1;}
+        </style>
     </head>
     <body>
         <div class="wrapper">
@@ -130,35 +137,51 @@
                     <h1 class="services__title">Другие услуги</h1>
                     <div class="services__wrapper">
                         <div class="services__item">
-                            <img src="images/services1-min.webp" alt="img" />
+                            <picture>
+                                <source srcset="images/services-mob.jpeg" media="(max-width: 400px)" />
+                                <img src="images/services1-min.webp" alt="img" loading="lazy" />
+                            </picture>
                             <div class="services__item-desc-wrapp">
                                 <div class="services__item-title">Рентгеновские снимки</div>
                                 <div class="services__item-descr">позволяют диагностировать открытые проблемы с зубами и костями челюстей</div>
                             </div>
                         </div>
                         <div class="services__item">
-                            <img src="images/services2-min.webp" alt="img" />
+                            <picture>
+                                <source srcset="images/services-mob2.jpeg" media="(max-width: 400px)" />
+                                <img src="images/services2-min.webp" alt="img" loading="lazy" />
+                            </picture>
                             <div class="services__item-desc-wrapp">
                                 <div class="services__item-title">Удаление зубов</div>
                                 <div class="services__item-descr">удаление поврежденных или инфицированных зубов</div>
                             </div>
                         </div>
                         <div class="services__item">
-                            <img src="images/services3-min.webp" alt="img" />
+                            <picture>
+                                <source srcset="images/services-mob3.jpeg" media="(max-width: 400px)" />
+                                <img src="images/services3-min.webp" alt="img" loading="lazy" />
+                            </picture>
                             <div class="services__item-desc-wrapp">
                                 <div class="services__item-title">Лечение пародонтита</div>
                                 <div class="services__item-descr">лечение заболеваний десен, которые могут привести к потере зубов</div>
                             </div>
                         </div>
                         <div class="services__item">
-                            <img src="images/services4-min.webp" alt="img" />
+                            <picture>
+                                <source srcset="images/services-mob4.png" media="(max-width: 400px)" />
+                                <img src="images/services4-min.webp" alt="img" loading="lazy" />
+                            </picture>
                             <div class="services__item-desc-wrapp">
                                 <div class="services__item-title">Консультации по уходу за зубами</div>
                                 <div class="services__item-descr">советы по регулярной чистке зубов, диете и лечению</div>
                             </div>
                         </div>
                         <div class="services__item">
-                            <img src="images/services5-min.webp" alt="img" />
+                            <picture>
+                                <source srcset="images/services-mob5.jpeg" media="(max-width: 400px)" />
+                                <img src="images/services5-min.webp" alt="img" loading="lazy" />
+                            </picture>
+
                             <div class="services__item-desc-wrapp">
                                 <div class="services__item-title">Гигиеническая чистка зубов</div>
                                 <div class="services__item-descr">удаление зубного камня, налета и повреждений, которые могут привести к заболеванию десен</div>
@@ -169,10 +192,13 @@
             </section>
             <section class="cleaning">
                 <div class="container">
-                    <h1 class="cleaning__title">Гигиеническая чистка зубов</h1>
+                    <h2 class="cleaning__title">Гигиеническая чистка зубов</h2>
                     <div class="cleaning__wrapper">
                         <div class="cleaning__img-wrap">
-                            <img src="images/cleaning-min.webp" alt="" />
+                            <picture>
+                                <source srcset="images/cleaning-mob-min.webp" media="(max-width: 430px)" />
+                                <img src="images/cleaning-min.webp" alt="" loading="lazy" />
+                            </picture>
                         </div>
                         <div class="cleaning__descr-wrapp">
                             <div class="cleaning__descr-title">Включает в себя:</div>
@@ -227,7 +253,7 @@
                 </div>
             </section>
             <section class="stages">
-                <h1 class="stages__title">Этапы</h1>
+                <h2 class="stages__title">Этапы</h2>
                 <div class="container">
                     <div class="stages__wrapper">
                         <div class="swiper stages-wiper">
@@ -298,7 +324,7 @@
                 </div>
             </section>
             <section class="advantages">
-                <h1 class="advantages__title">Наши преимущества</h1>
+                <h2 class="advantages__title">Наши преимущества</h2>
                 <div class="container">
                     <div class="advantages__wrapper advantages-swiper swiper">
                         <div class="swiper-wrapper">
@@ -345,7 +371,7 @@
                                     </svg>
                                 </div>
                                 <div class="advantages__item-descr">Возможность онлайн-записи</div>
-                                <!-- <div class="advantages__item-subdescr">Мы создаем комфортные условия для ваших питомцев, чтобы они чувствовали себя спокойно и уверенно..</div> -->
+                                <!-- <div class="advantages__item-subdescr">Мы создаем комфортные условиядля ваших питомцев, чтобы они чувствовали себя спокойно и уверенно..</div> -->
                             </div>
                         </div>
                         <div class="swiper-pagination-wrapper">
@@ -365,30 +391,30 @@
                 </div>
             </section>
             <section class="gallery">
-                <h1 class="gallery__title">Галерея</h1>
+                <h2 class="gallery__title">Галерея</h2>
                 <div class="container">
                     <div class="gallery__wrapper">
                         <div class="swiper gallery-awiper">
                             <ul class="gallery__list swiper-wrapper">
                                 <li class="gallery__list-item swiper-slide">
-                                    <img src="images/gallery1-min.webp" alt="gallery-images" />
-                                    <img src="images/gallery2-min.webp" alt="gallery-images" />
+                                    <img src="images/gallery1-min.webp" alt="gallery-images" loading="lazy" />
+                                    <img src="images/gallery2-min.webp" alt="gallery-images" loading="lazy" />
                                 </li>
                                 <li class="gallery__list-item swiper-slide">
-                                    <img src="images/gallery3-min.webp" alt="gallery-images" />
-                                    <img src="images/gallery4-min.webp" alt="gallery-images" />
+                                    <img src="images/gallery3-min.webp" alt="gallery-images" loading="lazy" />
+                                    <img src="images/gallery4-min.webp" alt="gallery-images" loading="lazy" />
                                 </li>
                                 <li class="gallery__list-item swiper-slide">
-                                    <img src="images/gallery5-min.webp" alt="gallery-images" />
-                                    <img src="images/gallery6-min.webp" alt="gallery-images" />
+                                    <img src="images/gallery5-min.webp" alt="gallery-images" loading="lazy" />
+                                    <img src="images/gallery6-min.webp" alt="gallery-images" loading="lazy" />
                                 </li>
                                 <li class="gallery__list-item swiper-slide">
-                                    <img src="images/gallery7png-min.webp" alt="gallery-images" />
-                                    <img src="images/gallery8-min.webp" alt="gallery-images" />
+                                    <img src="images/gallery7png-min.webp" alt="gallery-images" loading="lazy" />
+                                    <img src="images/gallery8-min.webp" alt="gallery-images" loading="lazy" />
                                 </li>
                                 <li class="gallery__list-item swiper-slide">
-                                    <img src="images/gallery9-min.webp" alt="gallery-images" />
-                                    <img src="images/gallery10-min.webp" alt="gallery-images" />
+                                    <img src="images/gallery9-min.webp" alt="gallery-images" loading="lazy" />
+                                    <img src="images/gallery10-min.webp" alt="gallery-images" loading="lazy" />
                                 </li>
                             </ul>
                             <div class="swiper-pagination-wrapper">
@@ -409,7 +435,7 @@
                 </div>
             </section>
             <section class="questions">
-                <h1 class="questions__title">Частые вопросы</h1>
+                <h2 class="questions__title">Частые вопросы</h2>
                 <div class="container">
                     <div class="questions__wrapper">
                         <ul class="questions__list">
@@ -520,7 +546,7 @@
                             </form>
                             <button form="contactForm" class="forms__btn" type="submit">записаться</button>
                             <div class="forms__content-images">
-                                <img src="images/form-images-min.webp" alt="form-images" />
+                                <img src="images/form-images-min.webp" alt="form-images" loading="lazy" />
                             </div>
                         </div>
                     </div>

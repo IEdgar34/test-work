@@ -1,12 +1,13 @@
 export const questionsOpen = () => {
-    const btns = document.querySelectorAll(".list__item-open")
-    btns.forEach(item => {
-        item.addEventListener("click",(e) => {
+    const items = document.querySelectorAll(".questions__list-item");
 
-            item.classList.toggle("list__item-open_active")
-            item.nextElementSibling.classList.toggle("list__item-content_active")
-        })
-    })
-
-
-}
+    items.forEach((item) => {
+        item.addEventListener("click", (e) => {
+            if (e.target.matches(".questions__list-item") || e.target.matches(".list__item-open")) {
+                console.log(e.target);
+                item.querySelector(".list__item-content").classList.toggle("list__item-content_active");
+                item.querySelector(".list__item-open").classList.toggle("list__item-open_active");
+            }
+        });
+    });
+};
